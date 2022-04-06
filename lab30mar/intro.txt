@@ -1,0 +1,8 @@
+gaming -> udp
+
+esempio1:
+client: scrive una frase, manda la frase al server
+server: riceve la frase, rende tutti i caratteri maiuscoli, restituisce la
+frase modificata al server
+client: riceve la frase modificata
+
