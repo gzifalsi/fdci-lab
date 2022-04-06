@@ -17,3 +17,8 @@ welcomeSocket.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
 welcomeSocket.bind(binding)
 welcomeSocket.listen(1)
 
+while True:
+    print('server pronto')
+    connectionSocket, clientAddress = welcomeSocket.accept()
+    thread = Thread(target=handler, args=(connectionSocket,))
+    thread.start()
